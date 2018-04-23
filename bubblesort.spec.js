@@ -1,6 +1,6 @@
 describe('Bubble Sort', function(){
     it('handles an empty array', function(){
-      expect( bubbleSort([]) ).toEqual( [] );
+      expect( bubbleSort([]) ).toEqual( []);
     });
 
     it('handles an array with one element', function(){
@@ -11,9 +11,9 @@ describe('Bubble Sort', function(){
         expect( bubbleSort([1,2,3,4]) ).toEqual( [1,2,3,4] );
     });
 
-    it('throws an error when an input paramater is not an array', function() {
-        expect(bubbleSort('teststring').toThrow(new Error("input is not an array")))
-    });
+    // it('returns null when an input paramater is not an array', function() {
+    //     expect(bubbleSort('teststring').toBeNull())
+    // });
 
     it('returns a sorted array from least to greatest', function(){
         expect( bubbleSort([4,3,2,1]) ).toEqual( [1,2,3,4] );
@@ -37,19 +37,3 @@ describe('Bubble Sort', function(){
 
 });
 
-
-
-  function bubbleSort(array) {
-
-    /* your code here */
-
-    // if (array.length === 0){
-    //     return [];
-    // };
-
-    // if (array.length === 1){
-
-    // }
-
-  
-  }
